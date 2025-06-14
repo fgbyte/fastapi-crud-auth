@@ -1,0 +1,8 @@
+name: fastapi-crud
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - python=3.11.11
+  - poetry
+prefix: /home/fgbyte/miniconda3/envs/fastapi-crud
