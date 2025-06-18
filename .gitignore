@@ -405,3 +405,4 @@ $RECYCLE.BIN/
 conda
 conda/
 .vscode/
+*.db
