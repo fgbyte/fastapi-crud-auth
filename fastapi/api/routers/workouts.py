@@ -26,7 +26,7 @@ class WorkoutCreate(WorkoutBase):
     pass
 
 
-# Workout Routes 👇
+# Workout Endpoints 👇
 @router.get('/')
 def get_workout(db: db_dependency, user: user_dependency, workout_id: int):
     return db.query(Workout).filter(Workout.id == workout_id).first()

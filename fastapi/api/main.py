@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from .database import Base, engine
-from .routers import auth, workouts
+from .routers import auth, workouts, routines
 
 app = FastAPI()
 
@@ -29,3 +29,5 @@ def read_root():
 app.include_router(auth.router)
 # Workouts route
 app.include_router(workouts.router)
+# Routine route
+app.include_router(routines.router)
